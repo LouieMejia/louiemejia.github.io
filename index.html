@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Louie Miguel Mejia</title>
+            <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=7">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <link rel="stylesheet" href="css/style.css">
+            <script src="https://kit.fontawesome.com/e32224c271.js" crossorigin="anonymous"></script>
+            <link href="https://fonts.googleapis.com/css2?family=Girassol&family=Oswald&display=swap" rel="stylesheet">
+
+            <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">   
+            <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+            <link rel="manifest" href="favicon/site.webmanifest">
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <h1 class="logo-text"><span>Louie</span>Mejia</h1>
+            </div>
+            <i class="fa fa-bars menu-toggle"></i>
+            <ul class="menu">    
+                <li><a href="#"><i class="fa fa-home" style="font-size: 1.1em;"></i>HOME</a></li>
+                <li>
+                    <a href="#about">
+                        <i class="fa fa-user" style="font-size: 1.1em;"></i>
+                        ABOUT
+                        <i class="fa fa-chevron-down" style="font-size: 1.1em;"></i>
+                    </a>
+                    <ul>
+                        <li onclick="move()">
+                            <a href="#skills">
+                                <i class="fas fa-fist-raised" style="font-size: 1.1em;"></i>
+                                My Skills
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#projects">
+                        <i class="fa fa-book" style="font-size: 1.1em;"></i>
+                        MY PROJECTS
+                        <i class="fa fa-chevron-down" style="font-size: 1.1em;"></i>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="#comp">
+                            <i class="fa fa-laptop" style="font-size: 1.1em;"></i>
+                            COMPUTER PROGRAMMING
+                        </a>
+                        </li>
+                        <li>
+                            <a href="#ani">
+                                <i class="fa fa-pencil" style="font-size:1.1em;"></i>
+                                ANIMATION
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                 <li>
+                    <a href="#contact">
+                        <i class="fa fa-envelope" style="font-size: 1.1em;"></i>
+                        CONTACT ME
+                        <i class="fa fa-chevron-down" style="font-size: 1.1em;"></i>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="#socmed">
+                                <i class="fa fa-thumbtack"></i>
+                                Social Media Accounts
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div>
+
+        </header>
+                
+            <div class="img">
+                <img src="images/preview.jpeg" alt="logo">
+            </div>
+            
+            <div class="box">
+                <h4 class="text-light-grey fs3">HELLO.</h4>
+                <h1 class="text-white fs"><a href="#home" onclick="alert('Hi there!')">I'm Louie Mejia</h1></a>
+                <h2 class="text-light-grey fs1">Student, Novice Programmer, Dreamer</h2>
+            </div>
+                    
+        <div class="content justify text-grey padding" id="about">
+            <h2 class="padding-16 text-light-grey">
+                About Me
+            </h2>
+
+            <h3>
+                Born and raised in Baguio City, Philippines. A full blooded filipino and a 
+                student of University of the Cordilleras. 18 years of age, 
+                I have hobbies of playing Online games, playing the guitar, Reading books or comics. 
+            </h3>
+        </div>
+
+        <div class="content justify text-grey padding" id="skills">
+            <h2 class="padding-16 text-light-grey">My Skills</h2>
+
+            <h3 class="wide">Communication</h3>
+            <div class="myProgress">
+                <div id="myCom">0%</div>
+            </div>
+
+            <p class="wide" >Web Design</p>
+            <div class="myProgress">
+                <div id="myWB">0%</div>
+            </div>
+
+            <p class="wide">Video Editing</p>
+            <div class="myProgress">
+                <div id="myVE">0%</div>
+            </div>
+
+            <p class="wide">Java</p> 
+            <div class="myProgress">
+                <div id="myJ">0%</div>
+            </div>
+            <br>
+            <button onclick="move()">Press Me To View</button>
+        </div>
+
+        <div class="padding-large content text-gray" id="projects">
+            <h1 class="text-light-grey">My Projects</h1>
+        </div>
+
+    <div class="content padding-large text-gray" id="comp"></div>
+        <br>
+    <h1 class="text-light-grey center" >COMPUTER PROGRAMMING</h1>
+    <div class="page-wrapper">
+        <div class="post-slider">
+            <h1 class="slider-title">My Works</h1>
+            <i class="fas fa-chevron-left prev"></i>
+            <i class="fas fa-chevron-right next"></i>
+    
+        <div class="post-wrapper">
+
+            <div class="post">
+                <img src="images/RadioBtn.png" alt="logo" class="slider-image">
+                <div class="post-info">
+                    <h4>RADIO BUTTON</h4>
+                    <i class="far fa-user">LOUIE MEJIA</i>
+                    &nbsp;
+                     <i class="far fa-calendar">JANUARY 2020</i>
+                </div>
+            </div>
+
+            <div class="post">
+                <img src="images/Swing calcu.png" alt="Calculator" class="slider-image">
+                <div class="post-info">
+                    <h4>SWING CALCULATOR</h4>
+                    <i class="far fa-user">LOUIE MEJIA</i>
+                    &nbsp;
+                     <i class="far fa-calendar">JANUARY 2020</i>
+            </div>
+            </div>
+
+            <div class="post">
+                <img src="images/Output1.png" alt="ColorMix" class="slider-image">
+                <div class="post-info">
+                    <h4>COLOR MIX</h4>
+                    <i class="far fa-user">LOUIE MEJIA</i>
+                    &nbsp;
+                     <i class="far fa-calendar">JANUARY 2020</i>
+                </div>
+            </div>
+
+            <div class="post">
+                <img src="images/Calendar.png" alt="calendar" class="slider-image">
+                <div class="post-info">
+                    <h4>CALENDAR</h4>
+                    <i class="far fa-user">LOUIE MEJIA</i>
+                    &nbsp;
+                    <i class="far fa-calendar">JANUARY 2020</i>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div id="ani"class="content padding-large text-gray">
+        <br>
+
+    <h1 class="text-light-grey center">ANIMATION</h1>
+    </div>
+    <div class="page-wrapper">
+        <div class="post-slider">
+            <h1 class="slider-title">My Works</h1>
+            <i class="fas fa-chevron-left aniprev"></i>
+            <i class="fas fa-chevron-right aninext"></i>
+    
+        <div class="ani-wrapper">
+
+            <div class="post">
+                <video src="videos/JUMPSCENE.mp4" class="slider-image" controls loop>
+                    Your browser does not support the video
+                </video>
+                <div class="post-info">
+                    <h4>JUMP CYCLE</h4>
+                    <i class="far fa-user">LOUIE MEJIA</i>
+                    &nbsp;
+                     <i  class="far fa-calendar">JANUARY 2020</i>
+                </div>
+            </div>
+
+            <div class="post">
+                <img src="images/EYE.jpg" alt="logo" class="slider-image">
+                <div class="post-info">
+                    <h4>EYE EXPRESSION</h4>
+                    <i class="far fa-user">LOUIE MEJIA</i>
+                    &nbsp;
+                    <br>
+                     <i  class="far fa-calendar">2019</i>
+                </div>
+            </div>
+ 
+            <div class="post">
+                <img src="images/CLEANUP.jpg" alt="Cat Cleanup" class="slider-image">
+                <div class="post-info">
+                    <h4>CLEAN UP CAT</h4>
+                    <i class="far fa-user">LOUIE MEJIA</i>
+                    &nbsp;
+                    <br>
+                     <i  class="far fa-calendar">2019</i>
+                </div>
+            </div>
+   
+            <div class="post">
+                <img src="images/CHARACTER DESIGN.jpg" alt="CharDesign" class="slider-image">
+                <div class="post-info">
+                    <h4>CHARACTER DESIGN</h4>
+                    <i class="far fa-user">LOUIE MEJIA</i>
+                    &nbsp;
+                    <br>
+                    <i class="far fa-calendar">2019</i>
+                </div>
+            </div>
+
+            <div class="post">
+                <video src="videos/S1 - 1.mp4" class="slider-image" controls loop>
+                    Your browser does not support the video
+                </video>
+                <div class="post-info">
+                    <h4>COMPOSITING</h4>
+                    <i class="far fa-user">LOUIE MEJIA</i>
+                    &nbsp;
+                     <i  class="far fa-calendar">JANUARY 2020</i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="padding-large content text-grey" id="contact">
+    <h1 class="text-light-grey">
+        Contact Me
+    </h1>
+            
+    <hr style="width:200px" class="opacity">
+        
+    <div class="section">
+        <h2><i class="fa fa-map-marker fa-fw text-white margin-right"></i> Baguio City, Philippines</h2>
+        <h2><i class="fa fa-phone fa-fw text-white margin-right"></i> Phone: +63 939 711 0596</h2>
+        <h2><i class="fa fa-envelope fa-fw text-white margin-right"> </i> Email: louiembm@gmail.com</h2>
+    </div>
+    <br>
+    <p>Lets get in touch. Send me a message through my social media accounts:</p>
+
+    <div class="footer" id="socmed">
+        <a href="https://www.trello.com/louiemiguelbmejia"><i class="fa fa-trello "></i></a>
+        <a href="https://www.linkedin.com/in/louiembm/"><i class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/LouieMejia/"><i class="fa fa-github"></i></a>
+</div>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/scripts.js"></script>
+</html>
